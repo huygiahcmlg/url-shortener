@@ -29,7 +29,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
+BASE_URL = os.getenv("BASE_URL", "http://localhost:8000").rstrip("/")
 
 
 def _generate_short_code(db: Session) -> str:
