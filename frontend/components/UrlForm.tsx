@@ -97,7 +97,7 @@ export default function UrlForm() {
             </a>
             <button
               onClick={handleCopy}
-              className="shrink-0 rounded-md bg-white/20 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-white/30"
+              className="shrink-0 rounded-md bg-green-400 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-green-300"
             >
               {copied ? "Copied!" : "Copy"}
             </button>
