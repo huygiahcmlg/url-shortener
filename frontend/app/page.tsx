@@ -8,7 +8,7 @@ export default function Home() {
           URL Shortener
         </h1>
         <p className="mb-8 text-gray-500">
-          Paste a long URL and get a short link instantly.
+          Paste a long URL and get a short link instantly
         </p>
         <UrlForm />
       </div>
