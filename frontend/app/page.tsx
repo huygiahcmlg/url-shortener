@@ -5,10 +5,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center px-4 py-16">
       <div className="w-full max-w-xl text-center">
         <h1 className="mb-2 text-4xl font-bold tracking-tight">
-          URL Shortener
+          Rút gọn link
         </h1>
         <p className="mb-8 text-gray-500">
-          Paste a long URL and get a short link instantly
+          Làm ngắn link · Short link
         </p>
         <UrlForm />
       </div>
