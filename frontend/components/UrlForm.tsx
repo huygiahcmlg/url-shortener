@@ -84,7 +84,7 @@ export default function UrlForm() {
       {result && (
         <div className="mt-4 rounded-lg border border-white/30 bg-white/20 backdrop-blur p-4">
           <p className="mb-2 text-xs font-medium uppercase tracking-wide text-white/60">
-            Short URL
+            Link rút gọn
           </p>
           <div className="flex items-center gap-2">
             <a
