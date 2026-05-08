@@ -64,7 +64,7 @@ export default function UrlForm() {
           placeholder="https://example.com/very/long/url"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+          className="w-full rounded-lg border border-white/30 bg-white/20 backdrop-blur px-4 py-3 text-sm text-white placeholder-white/60 outline-none focus:border-white/60 focus:ring-2 focus:ring-white/20"
         />
         <button
           type="submit"
@@ -76,14 +76,14 @@ export default function UrlForm() {
       </form>
 
       {error && (
-        <p className="mt-3 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600">
+        <p className="mt-3 rounded-lg bg-red-500/80 backdrop-blur px-4 py-3 text-sm text-white">
           {error}
         </p>
       )}
 
       {result && (
-        <div className="mt-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
-          <p className="mb-2 text-xs font-medium uppercase tracking-wide text-gray-500">
+        <div className="mt-4 rounded-lg border border-white/30 bg-white/20 backdrop-blur p-4">
+          <p className="mb-2 text-xs font-medium uppercase tracking-wide text-white/60">
             Short URL
           </p>
           <div className="flex items-center gap-2">
@@ -91,18 +91,18 @@ export default function UrlForm() {
               href={result.short_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 truncate text-sm font-medium text-blue-600 hover:underline"
+              className="flex-1 truncate text-sm font-medium text-white hover:underline"
             >
               {result.short_url}
             </a>
             <button
               onClick={handleCopy}
-              className="shrink-0 rounded-md bg-gray-100 px-3 py-1.5 text-xs font-medium transition hover:bg-gray-200"
+              className="shrink-0 rounded-md bg-white/20 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-white/30"
             >
               {copied ? "Copied!" : "Copy"}
             </button>
           </div>
-          <p className="mt-2 text-xs text-gray-400">
+          <p className="mt-2 text-xs text-white/50">
             {result.clicks} click{result.clicks !== 1 ? "s" : ""}
           </p>
         </div>
