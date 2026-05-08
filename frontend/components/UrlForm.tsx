@@ -71,7 +71,7 @@ export default function UrlForm() {
           disabled={loading}
           className="rounded-lg bg-blue-600 px-4 py-3 text-sm font-medium text-white transition hover:bg-blue-700 disabled:opacity-50"
         >
-          {loading ? "Shortening..." : "Shorten URL"}
+          {loading ? "Đang rút gọn..." : "Rút gọn"}
         </button>
       </form>
 
